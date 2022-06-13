@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="fixed">
+    <header class="header">
+      <nav>
+        <div class="menu-icon-logo">
+          <img class="menu-icon" src="./images/icon-menu.svg" alt="">
+          <div class="logo">
+            <img src="./images/logo.svg" alt="">
+          </div>
+        </div>
+    
+        <div class="links-container">
+          <ul class="links">
+            <li><a href="">Collections</a></li>
+            <li><a href="">Man</a></li>
+            <li><a href="">Women</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="cart">
+        <div class="cart-icon">
+          <div class="product">0</div>
+          <img src="./images/icon-cart.svg" class="cart-svg" height="27" alt="">
+          <div class="cart-card">
+            <div class="order-title">Cart</div>
+            <div class="order-product">
+              <div class="order-image">
+                <img src="./images/image-product-1.jpg" style="border-radius: 0.4rem;" height="80" alt="">
+              </div>
+              <div class="order-info">
+                <p class="order-name">Fall Limited Edition Sticker</p>
+                <div class="price">$125.00 * <span class="number1">0</span> = $<span class="total-price">0</span></div>
+              </div>
+              <img src="./images/icon-delete.svg" alt="" class="trash" height="25rem">
+            </div>
+            <div class="check">Checkout</div>
+          </div>
+        </div>
+        <div class="avatar">
+          <img src="./images/image-avatar.png" height="45" alt="">
+        </div>
+      </div>
+    </header>
+  </div>
+    <section class="image-info">
+        <div class="image-container">
+          <div class="main-image-container">
+            <img src="./images/image-product-1.jpg" class="main-image" alt="">
+          </div>
+          <div class="images">
+            <img src="./images/image-product-1.jpg" class="image" onclick="myFunction(event)" alt="">
+            <img src="./images/image-product-2.jpg" class="image" onclick="myFunction(event)" alt="">
+            <img src="./images/image-product-3.jpg" class="image" onclick="myFunction(event)" alt="">
+            <img src="./images/image-product-4.jpg" class="image" onclick="myFunction(event)" alt="">
+          </div>
+        </div>
+        <div class="info">
+          <h4>SNEAKER COMPANY</h4>
+          <h1>Fall Limited Edition <br>Sneaker</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos maxime inventore labore, at error odit, ut eligendi laborum suscipit, asperiores necessitatibus doloribus dolorum cumque qui quod. Sint suscipit natus ullam!</p>
+          <div class="price-discount">
+              <li class="price">$125.00</li>
+              <li class="discount">50%</li>
+          </div>
+          <div class="old-price">$250.00</div>
+          <div class="order">
+            <div class="select">
+              <button onclick="minus()" id="order" class="minus"><img class="minus-img" src="./images/icon-minus.svg" alt=""></button>
+              <div id="order" class="number">0</div>
+              <button onclick="plus()" id="order" class="plus"><img class="plus-img" src="./images/icon-plus.svg" alt=""></button>
+              
+            </div>
+            <button class="add"><img class="add-img" src="./images/icon-cart.svg" alt="">Add to Cart</button>
+          </div>
+        </div>
+    </section>
+  </div>
+
+  
+  <!-- <img src="./images/image-product-4.jpg" class="ebtn" alt="">  -->
+
+
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="app.js"></script>
+</body>
+
+</html>

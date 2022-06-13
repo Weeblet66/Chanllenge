@@ -1,0 +1,343 @@
+@import url("https://fonts.google.com/specimen/Kumbh+Sans");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1, h2, h3 {
+    font-weight: 700;
+    margin-top: 0px;
+}
+h1, h2, h3 {
+    font-size: 3rem;
+}
+.fixed-nav{
+    /* height: 3.5rem; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 2;
+}
+@media screen and (max-width: 800px){
+    h1, h2, h3 {
+        font-size: 1.5rem;
+    }
+
+}
+
+.cart-card{
+    position: fixed;
+    top: 7rem;
+    right:1.1rem;
+    z-index: 997;
+    background-color: #fff;
+    width: 23rem;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    display: none;
+    border-radius: 0.6rem;
+}
+.order-title{
+    text-align: left;
+    padding: 1rem;
+    padding-bottom: 0;
+    font-size: 2rem;
+}
+.order-image{
+    padding: 1rem;
+}
+.order-product{
+    display: flex;
+    align-items: center;
+}
+.order-name{
+    font-size: 1.3rem;
+    text-align: left;
+}
+.price{
+    text-align: left;
+    padding: 1rem;
+    padding-top: 0
+}
+.trash{
+    margin: 1rem;
+    box-shadow: rgba(248, 107, 25, 0.904) 0px 20px 30px -10px;
+   
+}
+.check{
+    background-color: hsl(26, 100%, 55%);
+    color: #fff;
+    width: 18rem;
+    height: 2.8rem;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 0.3rem;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+}
+.number1{
+    color: black;
+}
+.fixed{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;;
+}
+
+#body{
+    background-color: black;
+    color: white;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+   
+}
+button{
+    border: none;
+}
+body{
+    font-size: 1.2rem;
+}
+.header{
+    position: relative;
+    display: flex;
+    max-width: 70rem;
+    justify-content: space-between;
+    margin: auto;
+    text-align: center;
+    align-items: flex-start;
+    overflow: hidden;
+  
+}
+nav{
+    display: flex;
+    text-align: center;
+    margin: 1rem;
+    margin-bottom: 0.1;
+}
+.menu-icon-logo{
+    display: flex;
+    align-items: center;
+}
+.menu-icon{
+    width: auto;
+    height: 1.3rem;
+    display: none;
+    cursor: pointer;
+
+}
+.logo{
+    padding: 1rem;
+}
+    
+.links-container ul{
+    display: flex;
+    transition: all 2sec ease-in-out;
+    margin-left: 1.5rem;
+}
+.links-container ul li {
+    padding: 1rem;
+}
+.links-container ul li a:hover{
+    color: hsl(26, 100%, 55%);
+}
+.cart{
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    margin-bottom: 0.1;
+}
+.cart-icon{
+    padding: 1rem;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+}
+.product{
+    font-size: 11px;
+    border-radius: 5rem;
+    background-color:hsl(26, 100%, 55%);
+    left: 2.1rem;
+    bottom: 0.6rem;
+    z-index: 2;
+    padding: 0.3rem;
+    position: relative;
+    color: #fff;
+    display: none;
+}
+.avatar{
+    cursor: pointer;
+}
+.image-info{
+
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    max-width: 60rem;
+}
+.image-container{
+    padding: 1rem;
+}
+.main-image{
+    height: auto;
+    width: 26rem;
+    margin: 1rem;
+    border-radius: 1.8rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    
+}
+.images{
+    display: flex;
+}
+.image{
+    height: auto;
+    width: 5rem;
+    margin: 0.7rem;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;;
+}
+.image:hover{
+    transform: scale(1.1); 
+}
+
+.info{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    justify-content: center;
+}
+.info h4,h1,p, .order,.price-discount li{
+    padding: 0.8rem;
+}
+.info h4{
+    color: hsl(26, 100%, 55%);
+}
+.info h1{
+    font-family: sans-serif;
+}
+.price-discount{
+    display: flex;
+}
+.old-price{
+    text-decoration: line-through;
+    opacity: 75%;
+    padding: 0rem 1rem 1rem 0.8rem;
+}
+.select{
+    display: flex;
+}
+#order{
+    padding: 0.5rem 1rem;
+}
+.order{
+    display: flex;
+}
+.plus, .minus, .add{
+    width: 3rem;
+    text-align: center;
+    cursor: pointer;
+    color: hsl(26, 100%, 55%);
+    background-color: white; 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border: 1px solid hsl(26, 100%, 55%);
+    border-radius: 0.3rem;
+}
+.number{
+    min-width: 4rem;
+    margin: 0rem 1rem;
+    text-align: center;
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 0.3rem;
+    color: white;
+    border: 1px solid white;
+}
+.minus-img{
+    margin-bottom: 2px;
+}
+.plus-img{
+    margin-top: 1px;
+}
+.plus:active,.minus:active{
+    box-shadow: 0 10px 20px hsla(26, 100%, 55%, 0.767), 0 6px 6px hsl(26, 100%, 55%);;
+}
+.add{
+    margin: 0rem 1rem;
+    color: white;
+    background-color: hsl(26, 100%, 55%);
+    min-width: 12rem;
+    margin-left: 3rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    transition: all 0.3s ease-in;
+    font-size: 1rem;
+}
+.add:hover{
+    background-color: hsla(26, 100%, 58%, 0.911);
+}
+.active{
+    opacity: 0.7;
+}
+@media screen and (max-width: 922px){
+    .order{
+        flex-direction: column;
+    }
+    .add{
+        padding: 0.6rem;
+        margin: auto;
+        width: 18rem;
+    }
+    .select{
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    .plus, .minus{
+        width: 6rem;
+    }
+}
+@media screen and (max-width: 800px){
+    nav{
+        flex-direction: column;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .links-container ul{
+        flex-direction: column;
+        width: 0;
+        margin-left: 0;
+        
+    }
+    .links-container{
+        height: 0;
+        overflow: hidden;
+        transition: all 0.3s linear;
+    }
+    .links-container ul li{
+        padding-left: 0;
+    }
+    .image-info{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-image{
+        width: 22rem;
+
+    }
+    .image{
+        width: 4rem;
+    }
+    .plus, .minus{
+        min-width: 7rem;
+    }
+    .add{
+        width: 20rem;
+    }
+}
